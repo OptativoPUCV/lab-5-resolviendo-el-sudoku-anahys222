@@ -99,3 +99,12 @@ sudoku.c:50:9: error: unused variable 'seen' [-Werror=unused-variable]
          ^~~~
 cc1.exe: all warnings being treated as errors
 c4e6d5a
+sá., 17 de may. de 2025 12:29:39: 
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:50:9: error: unused variable 'seen' [-Werror=unused-variable]
+     int seen[10] = {0};
+         ^~~~
+cc1.exe: all warnings being treated as errors
+2e39005
