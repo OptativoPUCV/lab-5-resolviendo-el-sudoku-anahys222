@@ -140,3 +140,24 @@ sudoku.c:61:11: error: variable 'seen' set but not used [-Werror=unused-but-set-
            ^~~~
 cc1.exe: all warnings being treated as errors
 1afa840
+sá., 17 de may. de 2025 14:08:50: 
+ sudoku.c | 3 +++
+ 1 file changed, 3 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:67:14: error: 'val' undeclared (first use in this function)
+           if(val!=0){
+              ^~~
+sudoku.c:67:14: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:65:15: error: unused variable 'col' [-Werror=unused-variable]
+           int col = block_j * 3 + j;
+               ^~~
+sudoku.c:64:15: error: unused variable 'row' [-Werror=unused-variable]
+           int row = block_i * 3 + i;
+               ^~~
+sudoku.c:61:11: error: variable 'seen' set but not used [-Werror=unused-but-set-variable]
+       int seen[10] = {0};
+           ^~~~
+cc1.exe: all warnings being treated as errors
+585072a
