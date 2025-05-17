@@ -61,7 +61,10 @@ int is_valid(Node* n){
       int seen[10] = {0};
       for(i = 0; i<3; i++){
         for(j = 0; j<3; j++){
-          
+          if(val!=0){
+            if(seen[val]) return 0;
+            seen[val] = 1;
+          }
         }
       }
     }
