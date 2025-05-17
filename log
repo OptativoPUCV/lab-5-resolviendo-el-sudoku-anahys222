@@ -24,3 +24,14 @@ sudoku.c:56:7: error: unused variable 'col' [-Werror=unused-variable]
        ^~~
 cc1.exe: all warnings being treated as errors
 8d13d34
+sá., 17 de may. de 2025  1:55:51: 
+ sudoku.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:56:7: error: variable 'col' set but not used [-Werror=unused-but-set-variable]
+   int col = -1;
+       ^~~
+cc1.exe: all warnings being treated as errors
+51da75e
