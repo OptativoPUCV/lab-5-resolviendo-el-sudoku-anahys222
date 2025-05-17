@@ -76,3 +76,9 @@ sudoku.c:79:5: error: implicit declaration of function 'pushback' [-Werror=impli
      ^~~~~~~~
 cc1.exe: all warnings being treated as errors
 ae6e02c
+sá., 17 de may. de 2025 12:14:02: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+476d096
