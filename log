@@ -161,3 +161,9 @@ sudoku.c:61:11: error: variable 'seen' set but not used [-Werror=unused-but-set-
            ^~~~
 cc1.exe: all warnings being treated as errors
 585072a
+sá., 17 de may. de 2025 14:27:22: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 35/70
+d7a8e4e

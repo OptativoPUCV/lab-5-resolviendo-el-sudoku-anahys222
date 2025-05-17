@@ -63,7 +63,7 @@ int is_valid(Node* n){
         for(j = 0; j<3; j++){
           int row = block_i * 3 + i;
           int col = block_j * 3 + j;
-
+          int val = n->sudo[row][col];
           if(val!=0){
             if(seen[val]) return 0;
             seen[val] = 1;
