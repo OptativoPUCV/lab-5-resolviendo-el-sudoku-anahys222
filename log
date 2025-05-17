@@ -50,3 +50,18 @@ sudoku.c:64:7: error: variable 'col' set but not used [-Werror=unused-but-set-va
        ^~~
 cc1.exe: all warnings being treated as errors
 ee9a5c2
+sá., 17 de may. de 2025 12:13:00: 
+ sudoku.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:47:13: error: unused variable 'k' [-Werror=unused-variable]
+   int i, j, k;
+             ^
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:79:5: error: implicit declaration of function 'pushback' [-Werror=implicit-function-declaration]
+     pushback(list, new_node);
+     ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+f1aa008

@@ -44,11 +44,11 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int i,j,k;
+  int i, j, k;
 
   for(i=0; i<9; i++){   
     for(j=0; j<9; j++){
-      
+
     }
 
   }
@@ -70,6 +70,13 @@ List* get_adj_nodes(Node* n){
         break;
       }
     }
+  }
+  if(row == -1) return list;
+
+  for(int val = 1; val<=9; val++){
+    Node* new_node = copy(n);
+    new_node->sudo[row][col] = val;
+    pushback(list, new_node);
   }
     return list;
 }
