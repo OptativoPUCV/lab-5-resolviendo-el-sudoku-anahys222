@@ -56,6 +56,21 @@ int is_valid(Node* n){
     }
   }
 }
+  for(int block_i= 0; block_i <3; block_i++){
+    for(int block_j = 0; block_j<3; block_j++){
+      int seen[10] = {0};
+      for(i = 0; i<3; i++){
+        for(j = 0; j<3; j++){
+          
+        }
+      }
+    }
+  }
+
+
+
+
+
 
   return 1;
 }
