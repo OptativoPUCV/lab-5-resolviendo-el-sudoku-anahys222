@@ -2,3 +2,14 @@ sá., 17 de may. de 2025  1:50:48:
  tests:  0|5
 total_score: 0/70
 3f0e54c
+sá., 17 de may. de 2025  1:54:24: 
+ sudoku.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:55:17: error: unused variable 'col' [-Werror=unused-variable]
+   int row = -1, col = -1;
+                 ^~~
+cc1.exe: all warnings being treated as errors
+f1bf933
