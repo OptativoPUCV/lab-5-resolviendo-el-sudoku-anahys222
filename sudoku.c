@@ -53,9 +53,20 @@ int is_valid(Node* n){
       if(val != 0){
         if(seen[val]) return 0;
         seen[val] = 1;
+      }
     }
   }
-}
+  for (j = 0; j < 9; j++) {
+        int seen[10] = {0};
+        for (i = 0; i < 9; i++) {
+            int val = n->sudo[i][j];
+            if (val != 0) {
+                if (seen[val]) return 0;
+                seen[val] = 1;
+            }
+        }
+    }
+
   for(int block_i= 0; block_i <3; block_i++){
     for(int block_j = 0; block_j<3; block_j++){
       int seen[10] = {0};
@@ -123,13 +134,16 @@ Node* DFS(Node* initial, int* cont){
   Stack*S = createStack();
   push(S, initial);
   *cont = 0;
+
   while(!is_empty(S)){
     Node* current = top(S);
     pop(S); 
     (*cont)++; 
+
     if(is_final(current) && is_valid(current)){
       return current;
     }
+
     List* adj = get_adj_nodes(current);
     Node* adj_node = first(adj);
     while (adj_node != NULL) {
