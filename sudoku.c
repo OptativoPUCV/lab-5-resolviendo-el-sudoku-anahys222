@@ -127,7 +127,7 @@ Node* DFS(Node* initial, int* cont){
     Node* current = top(S);
     pop(S); 
     (*cont)++; 
-    if(is_final(current)){
+    if(is_final(current) && is_valid(current)){
       return current;
     }
     List* adj = get_adj_nodes(current);
