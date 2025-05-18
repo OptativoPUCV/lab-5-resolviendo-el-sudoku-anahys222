@@ -227,3 +227,14 @@ sudoku.c:134:9: error: unused variable 'adj' [-Werror=unused-variable]
          ^~~
 cc1.exe: all warnings being treated as errors
 0b1aa84
+do., 18 de may. de 2025 19:03:15: 
+ sudoku.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:134:29: error: 'current' undeclared (first use in this function)
+   List* adj = get_adj_nodes(current);
+                             ^~~~~~~
+sudoku.c:134:29: note: each undeclared identifier is reported only once for each function it appears in
+2a450ca
