@@ -212,3 +212,18 @@ test.c:7:8: error: '_strdup' defined but not used [-Werror=unused-function]
         ^~~~~~~
 cc1.exe: all warnings being treated as errors
 085ae0d
+do., 18 de may. de 2025 19:02:08: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:134:29: error: 'current' undeclared (first use in this function)
+   List* adj = get_adj_nodes(current);
+                             ^~~~~~~
+sudoku.c:134:29: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:134:9: error: unused variable 'adj' [-Werror=unused-variable]
+   List* adj = get_adj_nodes(current);
+         ^~~
+cc1.exe: all warnings being treated as errors
+0b1aa84
