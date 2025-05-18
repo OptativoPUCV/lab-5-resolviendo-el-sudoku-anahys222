@@ -123,6 +123,14 @@ Node* DFS(Node* initial, int* cont){
   Stack*S = createStack();
   push(S, initial);
   *cont = 0;
+  while(!is_empty(S)){
+    Node* current = top(S);
+    pop(S); 
+    (*cont)++; 
+    if(is_final(current)){
+      return current;
+  }
+  List* adj = get_adj_nodes(current);
 
   return NULL;
 }
